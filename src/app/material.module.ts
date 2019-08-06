@@ -13,7 +13,10 @@ import {
   MatCardModule,
   MatSelectModule,
   MatProgressSpinnerModule,
-  MatDialogModule
+  MatDialogModule,
+  MatTableModule,
+  MatSortModule,
+  MatPaginatorModule
 } from '@angular/material';
 
 
@@ -23,7 +26,8 @@ import {
     MatDatepickerModule, MatNativeDateModule,
     MatCheckboxModule, MatSidenavModule, MatToolbarModule,
     MatListModule, MatTabsModule, MatCardModule,
-    MatSelectModule, MatProgressSpinnerModule, MatDialogModule
+    MatSelectModule, MatProgressSpinnerModule, MatDialogModule,
+    MatTableModule, MatSortModule, MatPaginatorModule
   ]
 })
 export class MaterialModule {}

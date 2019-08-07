@@ -21,7 +21,8 @@ import { TrainingService } from './training/training.service';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
-import { FiredatePipe } from './firedate.pipe'
+import { FiredatePipe } from './firedate.pipe';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +47,8 @@ import { FiredatePipe } from './firedate.pipe'
     FormsModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    AngularFireAuthModule
   ],
   providers: [TrainingService],
   entryComponents:[StopTrainingComponent],

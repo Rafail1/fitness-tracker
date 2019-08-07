@@ -12,9 +12,9 @@ export class TrainingService {
   ];
   private runningExercise: Exercise;
 
-getPastExercises() {
-return this.exercises;
-}
+  getPastExercises() {
+    return this.exercises;
+  }
 
   getRunningExercise() {
     return this.runningExercise;

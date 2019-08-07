@@ -20,7 +20,8 @@ import { StopTrainingComponent } from './training/current-training/stop-training
 import { TrainingService } from './training/training.service';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { environment } from '../environments/environment'
+import { environment } from '../environments/environment';
+import { FiredatePipe } from './firedate.pipe'
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { environment } from '../environments/environment'
     WelcomeComponent,
     HeaderComponent,
     SidenavListComponent,
-    StopTrainingComponent
+    StopTrainingComponent,
+    FiredatePipe
   ],
   imports: [
     BrowserModule,

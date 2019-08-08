@@ -14,7 +14,8 @@ import { environment } from '../environments/environment';
 import { AuthModule } from './auth/auth.module';
 import { SharedModule } from './shared/shared.module';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
-
+import {StoreModule} from '@ngrx/store';
+import { reducers } from './app.reducer'
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    StoreModule.forRoot(reducers),
     AngularFireModule.initializeApp(environment.firebase),
     AuthModule,
     SharedModule,

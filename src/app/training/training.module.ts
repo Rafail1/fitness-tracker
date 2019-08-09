@@ -7,7 +7,8 @@ import { SharedModule } from '../shared/shared.module';
 import { PastTrainingsComponent } from './past-trainings/past-trainings.component';
 import { FiredatePipe } from '../firedate.pipe';
 import { TrainingRoutingModule } from './training-routing.module';
-
+import { StoreModule } from '@ngrx/store';
+import { trainingReducer } from './training.reducer';
 @NgModule({
     declarations: [
         TrainingComponent,
@@ -19,7 +20,8 @@ import { TrainingRoutingModule } from './training-routing.module';
     ],
     imports:[
         SharedModule,
-        TrainingRoutingModule
+        TrainingRoutingModule,
+        StoreModule.forFeature('training', trainingReducer)
     ],
     exports: [],
     entryComponents:[StopTrainingComponent]

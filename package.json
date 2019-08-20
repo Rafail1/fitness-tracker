@@ -24,10 +24,7 @@
     "@angular/platform-browser-dynamic": "~8.1.2",
     "@angular/router": "~8.1.2",
     "@ngrx/store": "^8.2.0",
-<<<<<<< HEAD
     "express": "^4.17.1",
-=======
->>>>>>> 4d1abbb37310d295409ed9afec50bfb3b13248dd
     "firebase": "^6.3.4",
     "rxjs": "~6.4.0",
     "rxjs-compat": "^6.5.2",
